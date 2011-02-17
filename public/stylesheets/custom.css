@@ -1,4 +1,11 @@
-nav {
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #00F;
+}
+
+nav a:hover {
   font-weight: bold;
   text-decoration: underline;
+  color: #FFF;
 }
