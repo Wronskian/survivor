@@ -8,8 +8,16 @@
 <body>
 
 <div class = "container">
-  <nav>NAVIGATION</nav>
-  <%= yield %>
+
+  <%= render 'layouts/header' %>
+  
+  <div class = "span-6">&nbsp;</div>
+  
+  <div class = "span-18 last">
+    <%= yield %>
+  </div>
+  
+  <%= render 'layouts/footer' %>
 
 </div>
 
