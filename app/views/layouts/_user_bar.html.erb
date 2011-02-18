@@ -1,9 +1,11 @@
 <nav>
 
+  <%# Displays options to 'edit user' and 'destroy session' when a user is signed in %>
+  <%# Otherwise, displays links to 'new user' and 'create session' %> 
+  
   <% if user_signed_in? %>
     Hello, <%= current_user.username %>! | <%= link_to "Edit", edit_user_registration_path %> | <%= link_to "Sign Out", destroy_user_session_path %>
   <% else %>
     <%= link_to "Sign Up", new_user_registration_path %> | <%= link_to "Sign In", new_user_session_path %>
   <% end %>
-
 </nav>

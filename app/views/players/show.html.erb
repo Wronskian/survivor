@@ -1,0 +1,14 @@
+<h2>Players</h2>
+
+<% @Players.each do |player| %>
+  <b><%= player.name %></b> <br />
+  <%= player.description %>
+    <% if player.user_id.nil? %>
+      <br /><br />
+    <% else %>
+      <br />
+      <div class = "small">Picked by:
+      <% @user = User.find(player.user_id) %>
+      <%= @user.username %></div>
+    <% end %>
+<% end %>

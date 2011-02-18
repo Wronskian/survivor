@@ -1,8 +1,15 @@
 Survivor::Application.routes.draw do
 
+  match '/players',    :to => 'players#show', :as => "show_players"
+  match '/player/new', :to => 'players#new',  :as => "new_player"
+  get "players/edit"
+  get "players/destroy"
+
   devise_for :users
 
   root :to => 'pages#home'
+  
+  resources :players
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

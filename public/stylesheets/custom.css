@@ -7,5 +7,78 @@ nav a {
 nav a:hover {
   font-weight: bold;
   text-decoration: underline;
+  color: #000;
+}
+
+a.signup_button {
+  display: block;
+	border: 1px solid #000;
+  text-align: center;
+  width: 158px;
   color: #FFF;
+  background: #000;
+  padding: 8px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover.signup_button {
+  display: block;
+	border: 1px solid #000;
+  text-align: center;
+  width: 158px;
+  color: #FFF;
+  background: #000;
+  padding: 8px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.field_with_errors {
+  margin-top: 5px;
+  background-color: #F00;
+	display: inline;
+}
+
+.field_with_errors label {
+  color: #fff;
+	padding: 2px;
+	display: inline;
+}
+
+.field_with_errors input {
+	border: 2px solid #F00;
+}
+
+#error_explanation {
+  width: 382px;
+  border: 2px solid #F00;
+  padding: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+	margin-top: -5px;
+  background-color: #FFF;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #F00;
+  color: #FFF;
+}
+
+#error_explanation p {
+  color: #000;
+	margin-bottom: 0;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+#error_explanation ul li {
+	padding: 0;
+  margin-top: 0;
 }
