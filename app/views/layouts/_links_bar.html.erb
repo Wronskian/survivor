@@ -2,9 +2,8 @@
 <%# Otherwise, displays nothing %> 
 
 <% if user_signed_in? %>
-  <b>Links</b><br />
       <%= link_to "Add Player", new_player_path %><br />
-      <%= link_to "Show Players", show_players_path %><br />
+      <%= link_to "Show Players", players_path %><br />
 <% else %>
   &nbsp;
 <% end %>

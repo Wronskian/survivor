@@ -1,5 +1,11 @@
 class PlayersController < ApplicationController
   before_filter :authenticate_user!
+	
+	def index
+		@Title = "Show Players"
+    @Players = Player.all
+		render 'show'
+	end
   
   def show
     @Title = "Show Players"
@@ -16,12 +22,12 @@ class PlayersController < ApplicationController
 
   def destroy
   end
-  
+	
   def create
     @player = Player.new(params[:player])
     if @player.save
       @Title = "Show Players"
-      @Players = Player.all
+			@Players = Player.all
       render 'show'
     else
       render 'new'

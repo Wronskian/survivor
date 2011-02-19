@@ -1,3 +1,8 @@
+nav {
+	text-align: center;
+	padding-top: 16px;
+}
+
 nav a {
   font-weight: bold;
   text-decoration: none;
@@ -8,6 +13,24 @@ nav a:hover {
   font-weight: bold;
   text-decoration: underline;
   color: #000;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo a {
+	text-decoration:none;
+	color: #000;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+.player_box {
+	margin-top: 8px;
+	border: 1px solid #000;
+	padding-left: 5px;
+	padding-top: 10px;
 }
 
 a.signup_button {

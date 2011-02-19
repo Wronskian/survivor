@@ -10,16 +10,20 @@
 <div class = "container">
 
   <%= render 'layouts/header' %>
+	
+	<div class = "span-24">&nbsp;</div>
+	
+	<div class = "span-3">&nbsp;</div>
   
-  <div class = "span-6">
-    <%= render 'layouts/links_bar' %>
-  </div>
+  <div class = "span-3">&nbsp;</div>
   
   <div class = "span-12">
     <%= yield %>
   </div>
   
-  <div class = "span-6 last">&nbsp;</div>
+  <div class = "span-6 last">
+		<%= render 'layouts/links_bar' %>
+	</div>
   
   <%= render 'layouts/footer' %>
 
